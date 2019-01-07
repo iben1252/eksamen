@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Cormorant SC', serif;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+div.forsidetekst {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div.tema_1,
+div.tema_2,
+div.tema_3,
+div.tema_4 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/**************************** tema 4 *****************************/
+.fronter_prototype {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    /*    width: 100%;*/
+}
+
+.fronter_app {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    /*    width: 100%;*/
+}
+
+.temadokumentation {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    /*    width: 100%;*/
+}
+
+/**************************** spil *****************************/
+.spil {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    /*    width: 100%;*/
+}
+
+
+/**************************** forside *****************************/
+.introuge {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin-left: 250px;
+    margin-right: 250px;
+    border: 4px solid none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1100px) {
+    .introuge {
+        margin: auto;
+    }
+}
+
+/**************************** forside slut *****************************/
+
+
+/**************************** footer *****************************/
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: #fafafa;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 650px;
+}
+
+/****************************  Om mig  ****************************/
+.sectionwrapper {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px;
+}
+
+.column {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 15px;
+    border: 4px solid none;
+    padding: 20px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 70%;
+}
+
+/****************************  Menu  ****************************/
+
+
+/* unvisited link */
+header nav a:link {
+    color: #000000;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: gray;
+}
+
+/* selected link */
+header nav a:active {
+    color: #f2e4d7;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    /*    background: linear-gradient(rgba(144, 144, 144, 0.44), rgba(255, 255, 0, 0));*/
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 4rem 2rem;
+
+}
+
+header nav a {
+    font-size: 1.5rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-family: 'Cormorant SC', serif;
+
+}
+
+@media only screen and (min-width:725px) {
+
+    header nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header nav a {
+        font-size: 1.2rem;
+        border-right: 0.1rem solid black;
+        padding: 0 0.4rem 0 0;
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+}
+
+/****************************  Menu slut  ****************************/
+
+
+
+/************************* Grundlæggende web ************************/
+/*** Grulæægende web - gallari ***/
+
+.galleri {
+    text-align: center;
+}
+
+.masonry {
+    /* Masonry container */
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+    margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    -webkit-transition: 1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+.item:hover {
+    transform: scale(1.2);
+}
+
+/************************* Grundlæggende web - slut  ************************/
+
+
+/************************* Grundlæggende video  ************************/
+video {
+    height: 100%;
+    width: 100%;
+    background: none;
+}
+
+/************************* Grundlæggende video - slut  ************************/
