@@ -84,6 +84,7 @@ div.tema_4 {
     flex-wrap: wrap;
 }
 
+
 @media only screen and (max-width: 1100px) {
     .introuge {
         margin: auto;
@@ -96,6 +97,7 @@ div.tema_4 {
 /**************************** footer *****************************/
 
 .footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100px;
@@ -107,6 +109,12 @@ div.tema_4 {
 .logo {
     width: 80px;
     margin-left: 650px;
+}
+
+@media only screen and (max-width: 804px) {
+    .logo {
+        margin-left: 150px;
+    }
 }
 
 /****************************  Om mig  ****************************/
